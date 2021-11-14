@@ -426,10 +426,16 @@
               <div class="menu-content pb-60 col-lg-10">
                 <div class="title text-center">
                   <h2>Форма связи</h2>
-                  <input class="form-control input" type="text" placeholder="Введите имя">
-                  <input class="form-control input" type="text" placeholder="Телефон">
-                  <input type="email" class="form-control input" placeholder="name@example.com">
-                  <input class="btn btn-primary" type="submit" value="Отправить">
+                  <label>
+                    Your email:
+                    <input type="email" name="_replyto">
+                  </label>
+                  <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                  </label>
+                  <!-- your other form fields go here -->
+                  <button type="submit">Send</button>
                 </div>
               </div>
             </div>
