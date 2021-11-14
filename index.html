@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+   <link href="css/fontawesome/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <script async src="https://imgbb.com/upload.js"></script>
+   
+</head>
+<body>
+
+   <header> 
+
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="console">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <img src="img/logo.png" alt="">
+               <div class="logo">
+                  <p>
+                     <span style="color: orange;">ALL</span> - <span style="color: gray;">SEEING</span> <br> TECHNOLOGI
+                  </p>
+               </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">МЕНЮ</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" >
+                <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <a class="nav-link"  href="#glav">Главная</a>
+                  <a class="nav-link"  href="#usluga">Услуги</a>
+                  <a class="nav-link"  href="#kalkulator">Калькулятор</a>
+                  <a class="nav-link"  href="#partner">Партнеры</a>
+                  <a class="nav-link"  href="#vd">Фотогалерея</a>
+                  <a class="nav-link"  href="#svyz">Контакты</a>
+                </div>
+              </div>
+            </div>
+         </div>
+      </nav>
+
+      <div class="banner-area" id="glav">
+         <div class="container">
+           <div class="row fullscreen align-items-center justify-content-center" style="height: 100vh;">
+             <div class="banner-content col-lg-10 text-center">
+               <h1 class="text-black fw-bold">Smart New Future</h1>
+               <div class="header-center-flex">
+                  <hr><p class="text-black">Монтаж камер видеонаблюдения</p><hr>
+               </div>
+               <a href="#kalkulator" class="btn btn-dark">Узнать стоимость</a>
+             </div>
+           </div>
+         </div>
+       </div>
+
+   </header> 
+
+   <main>
+  
+    <section class="top-course-area section-gap" id="usluga">
+      <div class="container">
+
+        <div class="row d-flex justify-content-center">
+          <div class="menu-content pb-60 col-lg-10">
+            <div class="title text-center element-animation">
+              <h2>Виды предоставляемых услуг</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-3 course-left">
+            <div class="single-course">
+              <div class="header-center-flex">
+                <hr><p class="text-white">офисные помещения</p><hr>
+              </div>
+              <img src="img/ofice.png" class="rounded mx-auto d-block">
+            </div>
+            <div class="single-course">
+              <div class="header-center-flex">
+                <hr><p class="text-white">складные помещения</p><hr>
+              </div>
+              <img src="img/sklad.png" class="rounded mx-auto d-block">
+            </div>
+          </div>
+          <div class="col-lg-3 course-right">
+            <div class="single-course">
+              <div class="header-center-flex">
+                <hr><p class="text-white">загородный дом/дача</p><hr>
+              </div>
+              <img src="img/home.png" class="rounded mx-auto d-block">
+            </div>
+            <div class="single-course">
+              <div class="header-center-flex">
+                <hr><p class="text-white">трц и магазины</p><hr>
+              </div>
+              <img src="img/magaz.png" class="rounded mx-auto d-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-course-area section-gap" id="kalkulator">
+      <div class="conteiner">
+
+        <div class="row d-flex justify-content-center element-animation">
+          <div class="menu-content pb-60 col-lg-10">
+            <div class="title text-center">
+              <h2>Калькулятор</h2>
+              <p class="fw-bold">Представленный расчет стоимости оборудования</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteiner vid" id="conteiner">
+          <div class="row">
+            <div class="col">
+              <h5>Камеры</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <p>Вид</p>
+              <select class="form-select" aria-label="Default select example" id="vid" onchange="calc()">
+                <option value="0" selected disabled hidden>Выбор вида</option>
+                <option value="1">Уличная</option>
+                <option value="2">Внутренняя</option>
+              </select>
+            </div>
+            <div class="col">
+              <p>Количество</p>
+              <select class="form-select" aria-label="Default select example" id="colich" onchange="calc()">
+                <option value="0" selected disabled hidden>Выберите количество</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col">
+              <p>Качество</p>
+              <select class="form-select" aria-label="Default select example" id="kach" onchange="calc()">
+                <option value="0" selected disabled hidden>Выберите качество</option>
+                <option value="5000">1 Мр (1280х720)</option>
+                <option value="7000">2 Мр (1920х1080)</option>
+                <option value="10000">3 Мр (2048х1530)</option>
+                <option value="15000">5 Мр (2560х1920)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteiner vid" id="conteiner">
+          <div class="row">
+            <div class="col">
+              <h5 id="h5">Хранения данных</h5>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="form-check form-switch" id="cb1" onchange="calk1()">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"> 
+                <p>видеорегистратор</p>
+              </div>
+              <select class="form-select" aria-label="Default select example" id="sel1" onchange="calc()" disabled>
+                <option value="0" id="op1">Выбрать видеорегистратор</option>
+                <option value="18000">4 канала</option>
+                <option value="20000">8 каналов</option>
+                <option value="35000">16 каналов</option>
+                <option value="45000">32 канала</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="form-check form-switch" id="cb2" onchange="calk2()">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"> 
+                <p>ЖД</p>
+              </div>
+              <select class="form-select" aria-label="Default select example" id="sel2" onchange="calc()" disabled>
+                <option value="0" id="op2">Выбрать жесткий диск</option>
+                <option value="5000">1 ТБ</option>
+                <option value="7000">2 ТБ</option>
+                <option value="9000">3 ТБ</option>
+                <option value="12000">4 ТБ</option>
+              </select>
+            </div>
+          </div>
+          <div class="row align-items-center" id="row">
+            <div class="col">
+              <div class="form-check form-switch" id="cb3" onchange="calk3()">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"> 
+                <p>Монитор</p>
+              </div>
+              <select class="form-select" aria-label="Default select example" id="sel3" onchange="calc()" disabled>
+                <option value="0" id="op3">Выбрать монитор</option>
+                <option value="18000">Монитор 19 "</option>
+                <option value="21000">Монитор 23 "</option>
+                <option value="28000">Монитор 27 "</option>
+                <option value="37000">Монитор 29 "</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="form-check form-switch" id="cb4" onchange="calk4()">
+                <input class="form-check-input" type="checkbox" id="ch4"> <p>ИБП</p>
+              </div>
+              <select class="form-select" aria-label="Default select example" id="sel4" disabled onchange="calc()">
+                <option value="0" id="op4">Выбрать ИБП</option>
+                <option value="16000">1000 Вт</option>
+                <option value="25000">1500 Вт</option>
+                <option value="45000">3000 Вт</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="conteiner sum" id="conteiner">
+          <div class="row">
+            <div class="col">
+              <p>
+                Предварительная стоимость оборудования: <span id="result">0</span> <span id="result1">0</span> Руб.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="top-course-area section-gap" id="partner">
+
+      <div class="conteiner element-animation">
+        <div class="row d-flex justify-content-center">
+          <div class="menu-content pb-60 col-lg-10">
+            <div class="title text-center">
+              <h2>НАШИ ПАРТНЕРЫ</h2>
+              <p class="fw-bold">Используем оборудование мировых брендов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center" id="img">
+        <img src="img/np1.png" class="img-thumbnail">
+        <img src="img/np2.png" class="img-thumbnail">
+        <img src="img/np3.png" class="img-thumbnail">
+        <img src="img/np4.png" class="img-thumbnail">
+        <img src="img/np5.png" class="img-thumbnail">
+      </div>
+
+      <div class="row align-items-center" id="img2">
+        <div class="card card1">
+          <img src="img/kamera.png" class="img-thumbnail">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Камеры</h5>
+          </div>
+        </div>
+        <div class="card card2">
+          <img src="img/viseoreg.png" class="img-thumbnail">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Видеорегистраторы</h5>
+          </div>
+        </div>
+        <div class="card card3">
+          <img src="img/komutacoborud.png" class="img-thumbnail">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Коммуникационные <br>оборудования</h5>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="top-course-area section-gap" id="vidim-vse">
+      <div class="conteiner">
+        <div class="row d-flex justify-content-center" id="vidvse">
+          <div class="menu-content pb-60 col-lg-10 element-animation">
+            <div class="title text-center tx1">
+              <h2>МЫ ВИДИМ ВСЕ</h2>
+              <h3>И ПРЕДОСТАВЛЯЕМ ЛУЧШЕЕ!</h3>
+            </div>
+          </div>
+          <div class="title text-center title2 tc2">
+            <h2>Что</h2>
+            <h3>Получают наши клиенты?</h3>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row text-center text-icons">
+            <div class="col-sm">
+              <img src="img/networking.png" class="img-thumbnail">
+              <p>Современную <br>систему</p>
+            </div>
+            <div class="col-sm">
+              <img src="img/wrench.png" class="img-thumbnail">
+              <p>Сервисное обслуживание <br>оборудования</p>
+            </div>
+            <div class="col-sm">
+              <img src="img/global-network.png" class="img-thumbnail">
+              <p>Просмотр в любой <br>точке мира</p>
+            </div>
+            <div class="col-sm">
+              <img src="img/rocket.png" class="img-thumbnail">
+              <p>Оперативная установка <br>видеооборудования</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="top-course-area section-gap" id="vd">
+
+      
+
+      <div class="container text-center tx2">
+        <h2>Фотогалерея</h2>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="img/video1.png">
+              <img class="img-fluid" src="img/video3.png">
+              <img class="img-fluid" src="img/video5.png">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="img/video6.png">
+              <img class="img-fluid" src="img/video7.png">
+              <img class="img-fluid" src="img/video8.png">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="img/video9.png">
+              <img class="img-fluid" src="img/video10.png">
+              <img class="img-fluid" src="img/video11.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteiner tx3">
+        <div class="row d-flex justify-content-center" id="princ-raboba">
+          <div class="menu-content pb-60 col-lg-10">
+            <div class="title text-center element-animation">
+              <h2>Принципы работы</h2>
+              <p>Системы видеонаблюдения</p>
+              
+            </div>
+            <div class="blok-img">
+              <img src="img/blok.png" class="img-fluid">
+            </div>
+            <div class="blok-img1">
+              <img src="img/blok-min.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-course-area section-gap" id="svyz">
+      <!-- <img src="img/zdaniya.jpg" class="backgr" /> -->
+      <div class="conteiner" id="title">
+        <div class="row d-flex justify-content-center" >
+          <div class="menu-content pb-60 col-lg-10">
+            <div class="title text-center element-animation" >
+              <h2>Связь с нами</h2>
+              <p>Выберите удобный способ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="container">
+              <div class="row row-cols-2">
+                <div class="col">
+                  <h3>
+                    Звоните нам
+                  </h3>
+                  <p>
+                    +380-071-000-00-00
+                  </p>
+                </div>
+                <div class="col">
+                  <h3>
+                    Пишите нам
+                  </h3>
+                  <p>
+                    all-seing.@gmail.com
+                  </p>
+                </div>
+                <div class="col">
+                  <h3>
+                    Приезжайте к нам
+                  </h3>
+                  <p>
+                    г. Донецк ул. Артёма д.10
+                  </p>
+                </div>
+                
+              </div>
+            </div>  
+          </div>
+
+           
+            <div class="conteiner" id="form">
+              <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-10">
+                  <div class="title text-center">
+                    <h2>Форма связи</h2>
+                    <input class="form-control input" type="text" placeholder="Введите имя">
+                    <input class="form-control input" type="text" placeholder="Телефон">
+                    <input type="email" class="form-control input" placeholder="name@example.com">
+                    <input class="btn btn-primary" type="submit" value="Отправить">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+
+    <section class="top-course-area section-gap texgup" id="comanda">
+
+      <div class="row d-flex justify-content-center" >
+        <div class="menu-content pb-60 col-lg-10 element-animation">
+          <div class="title text-center">
+            <h2>НАША КОМАНДА</h2>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+
+              <div class="card" style="width: 18rem; ">
+                <img src="img/kom1.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Данил Панасенко</h5>
+                  <p class="card-text">дизайнер/программист</p>
+                  <a href="https://vk.com/id156122001">
+                    <i class="fab fa-vk"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-discord"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm">
+
+              <div class="card" style="width: 18rem;">
+                <img src="img/kom2.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Терехов Максим</h5>
+                  <p class="card-text">программист</p>
+                  <a href="https://vk.com/maksimov0309">
+                    <i class="fab fa-vk"></i>
+                  </a>
+                  <a href="https://www.instagram.com/0508785818az/?hl=ru">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://discordapp.com/users/500305599825969174">
+                    <i class="fab fa-discord"></i>
+                  </a>                 
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container">
+        <div class="lg">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="">
+            <div class="logo">
+              <p>
+                <span style="color: orange;">ALL</span> - <span style="color: gray;">SEEING</span> <br> TECHNOLOGI
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="foot">
+          <p>© Все права защищены</p>
+          <p>+380-071-000-00-00</p>
+        </div>
+      </div>
+   </nav>
+  </footer>
+
+
+   <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A20b44d98498722bee47c392f5fa0a8cd57ccf83b78a092f35376756440575874&amp;width=1000&amp;height=445&amp;lang=ru_UA&amp;scroll=true"></script> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+
+</body>
+</html>

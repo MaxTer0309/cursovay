@@ -1,0 +1,478 @@
+p{
+   color: white;
+   font-size: 20px;
+}
+
+h1{
+   font-size: 64px;
+}
+
+h2{
+   font-size: 32px;
+   color: white;
+   font-weight: bold;
+}
+
+h5{
+   color: white;
+}
+
+body{
+   overflow-x:hidden;
+}
+
+/* шапка */
+
+header{
+   background: red;
+   background: url(../img/header-bg.png);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 100vh;
+}
+
+header .navbar .container .navbar-brand{
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   width: 250px;
+   height: 70px;
+}
+
+header hr{
+   opacity: 1;
+   border-top: 5px solid #1D1D1D;
+   width: 50px;
+}
+
+.banner-content{
+   width: 600px;
+}
+
+header .header-center-flex{
+   display: flex;
+   justify-content: space-around;
+}
+
+header .banner-area .btn-dark{
+   background: #1D1D1D;
+}
+
+header .banner-area .btn-dark:hover{
+   color: #1D1D1D;
+   border: solid 1px #1D1D1D;
+   background: white;
+}
+#glav h1{
+   color: #cfc09f;
+	font-family: 'Playfair Display', serif;
+    position: relative;
+	text-transform: uppercase;	
+	font-size: 50px;
+	margin: 0;
+	font-weight: 400;
+	transform: scale(1);
+	text-shadow: -1px 0 1px #c6bb9f, 
+	0 1px 1px #c6bb9f, 
+	5px 5px 10px rgba(0, 0, 0, 0.4),
+	-5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#glav h1:before {
+   content: attr(data-heading);
+   left: 0;
+  top: 0;
+   position: absolute;	
+  z-index: 1;
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+.offcanvas-header{
+   background: #212529;
+}
+
+/* услуги */
+
+#usluga{
+   /* background: black; */
+   background: linear-gradient(to bottom, black, #081725);
+   padding-top: 50px;
+   box-shadow: 1px -41px 69px 14px #000000;
+}
+
+.course-left, .course-right{
+   width: 400px;
+}
+
+main .align-items-center{
+   justify-content: space-around;
+   padding: 50px 0;   
+}
+
+.single-course{
+   background: rgba(10, 10, 10, 0.6);
+   box-shadow: 1px 1px 20px 1.5px #2e2e2e;
+   padding: 5px;
+   margin-bottom: 10px;
+   width: 320px;
+   height: 320px;
+}
+
+.single-course:hover{
+   box-shadow: 1px 1px 20px 1.5px white;
+}
+
+main .row .header-center-flex p{
+   font-size: 18px;
+   text-transform: uppercase;
+   margin: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+main hr{
+   opacity: 1;
+   border-top: 5px solid white;
+   width: 30px;
+}
+
+main .header-center-flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* калькулятор */
+
+#kalkulator{
+   background: #081725;
+   padding-top: 50px;
+}
+
+/* #kalkulator .col{
+   margin-top: 20px;
+   margin-bottom: 20px;
+} */
+
+#conteiner{
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.vid{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+} 
+
+.vid p{
+   font-family: Roboto Slab;
+   font-size: 18px;
+   color: #FFFFFF;
+}
+
+.vid h5{
+   font-family: Roboto;
+   font-size: 24px;
+   color: #FFFFFF;
+}
+
+#row{
+   margin-top: -100px;
+}
+
+#result{
+   color: #cc0000;
+   text-decoration: line-through;
+	text-decoration-color: rgb(255, 255, 255);
+}
+
+.sum span{
+   font-size: 30px;
+}
+
+.sum p{
+   margin-left: 20px;
+}
+
+/* наши партнеры */
+#partner{
+   /* background: #2f2f2f; */
+   /* background: black; */
+   background: linear-gradient(to bottom, #081725, black);
+   padding-top: 50px;
+}
+
+#partner #img .img-thumbnail{
+   min-width: 180px;
+   max-width: 180px;
+   margin-top: 50px;
+}
+
+#partner #img{
+   margin-left: 150px;
+   margin-right: 150px;
+}
+
+.card{
+   background: none;
+   border: none;
+}
+
+#partner .row .card-img-overlay{
+   display: flex;
+   align-items: flex-end;
+   margin-left: 20px;
+}
+
+main #partner #img2 .card{
+   max-width: 400px;
+   margin-top: 50px;
+}
+
+main #partner #img2 .card img{
+   background: none;
+   border: none;
+   width: 400px;
+   height: 400px;
+}
+
+.row .form-check{
+   margin-top: 10px;
+}
+
+/* видим все */
+
+.tx1 h2{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 50px;
+   color: #595959;
+   margin-top: 100px;
+}
+
+.justify-content-center h3{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   color: #000000;
+}
+
+.tc2 h2{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 40px;
+   color: #139AD5;
+}
+
+.tc2 h3{
+   /* margin-top: -20px; */
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   color: #000000;
+}
+
+#vidim-vse{
+   /* background: url(../img/belom-fone-38.png);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 150vh;
+   z-index: 1000; */
+   /* margin-top: -400px; */
+   /* background: #f1eeee; */
+   background: linear-gradient(to bottom, black, #f1eeee);
+}
+.text-icons p{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 24px;
+   color: #000000;
+   margin-bottom: 40px;
+}
+
+.tx2 h2{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   color: #139AD4; 
+}
+
+/* #vidim-vse #vidvse{
+   padding-top: 350px;
+} */
+
+.tx3 h2{
+   color: #595959;
+}
+
+.tx3 p{
+   color: #595959;
+}
+
+.title2{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+#vd{
+   background: #f1eeee;
+   width: 100%;
+}
+
+#vd .row .col-sm{
+   /* margin-top: -100px; */
+}
+
+#vidim-vse .row .col-sm img{
+   width: 95px;
+   height: 95px;
+   background: none;
+   border: none;
+}
+
+#vd .container #carousel img{
+   width: 300px;
+   height: 300px;
+   padding: 20px;
+}
+
+.blok-img{
+   margin-top: 100px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 50px;
+}
+
+#princ-raboba{
+   padding-top: 100px;
+}
+
+/* связь */
+/* .backgr{
+   background-repeat: space;
+   background-position: right top;
+} */
+#svyz{
+   /* background: url(../img/zdaniya.jpg;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 100vh;
+   z-index: 1000;*/
+   background-image: url("../img/fon-dom.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding-top: 50px; 
+   opacity: 0.80;
+   /* background: gray; */
+
+}
+
+#svyz .input{
+   margin: 10px;
+   border: none;
+   border-bottom: 2px solid white;
+   border-radius: 0;
+   background: none;
+}
+
+
+#svyz #form{
+   padding-top: 20px;
+   padding-bottom: 50px;
+   border: solid 2px #0094ff;
+   background: rgba(204, 205, 206, 0.6);
+   width: 350px;
+   padding-right: 50px;
+   padding-left: 30px;
+   margin-right: 10px;
+}
+
+#svyz .btn{
+   background: #0094ff;
+   margin-top: 20px;
+   width: 200px;
+}
+
+#svyz .btn:hover{
+   background: none;
+   border: solid 1px #0094ff;
+}
+
+/* команда */
+
+#comanda{
+   padding-top: 50px;
+   background: #555555;
+}
+
+#comanda .card{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   text-align: center;
+}
+
+#comanda .card a{
+   text-decoration: none;
+   color: black;
+}
+
+.fa-discord, .fa-instagram, .fa-vk{
+   font-size: 30px;
+   margin: 10px;
+}
+
+.fa-discord:hover, .fa-instagram:hover, .fa-vk:hover{
+   color: white;
+}
+
+/* footer */
+
+footer .navbar .container .navbar-brand{
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   width: 250px;
+}
+
+
+/* анимация */
+
+.element-animation {
+   opacity: 0;
+   transform: translateY(50px);
+ }
+
+ .element-animation.element-show {
+   opacity: 1;
+   transition: all 1.5s;
+   transform: translateY(0%);
+ }
+
+
+ 
+ .square-animation {
+   animation: wipe-enter 2s 1
+ }
+ 
+ @keyframes wipe-enter {
+   0% {
+     transform: scale(0, .025)
+   }
+   50% {
+     transform: scale(1, .025)
+   }
+ }

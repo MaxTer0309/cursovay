@@ -1,0 +1,76 @@
+@media(max-width:991px){
+   header #console .offcanvas{
+      background: #212529;
+   }
+}
+
+@media(max-width:730px){
+   #kalkulator #conteiner .align-items-center{
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media(max-width:526px){
+   footer .navbar .container{
+      display: flex;
+      justify-content: center;
+   }
+}
+@media(max-width:780px){
+   #glav h1{
+      font-size: 40px;
+   }
+}
+@media(max-width:450px){
+   #glav h1{
+      font-size: 30px;
+   }
+   #glav p{
+      font-size: 16px;
+   }
+   header hr{
+      opacity: 1;
+      border-top: 2px solid #1D1D1D;
+      width: 30px;
+   }
+}
+@media(max-width:410px){
+   #usluga h2{
+      font-size: 24px;
+   }
+   #vidim-vse h2{
+      font-size: 40px;
+   }
+   #vidim-vse h3{
+      font-size: 30px;
+   }
+   .row .row-cols-2{
+      /* display: flex;
+      justify-content: center;
+      text-align: center */
+      display: none;
+   } 
+}
+@media(max-width:500px){
+   #svyz h3{
+      font-size: 20px;
+   }
+   #svyz p{
+      font-size: 18px;
+   }
+   .blok-img{
+      display: none;
+   }
+}
+@media(min-width:501px){
+   #svyz h3{
+      font-size: 20px;
+   }
+   #svyz p{
+      font-size: 18px;
+   }
+   .blok-img1{
+      display: none;
+   }
+}
