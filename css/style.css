@@ -376,6 +376,7 @@ main #partner #img2 .card img{
    background-size: cover;
    padding-top: 50px; 
    opacity: 0.80;
+   color: black;
    /* background: gray; */
 
 }
