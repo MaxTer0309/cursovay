@@ -378,7 +378,11 @@ main #partner #img2 .card img{
    opacity: 0.80;
    color: black;
    /* background: gray; */
+}
 
+#svyz .col h3{
+   color: orangered;
+   font-size: 24px;
 }
 
 #svyz .input{
